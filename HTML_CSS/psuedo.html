@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors  Pseudo Class</title>
+    <style>
+        body{
+            background: linear-gradient(red,white,pink);
+        }
+        button:hover{
+            background-color: teal;
+            color: aliceblue;
+            background: linear-gradient(white,blue,black);
+        }
+        button:active{
+            background-color: black;
+            color: aliceblue;
+            background: linear-gradient(black,blue,white);
+        }
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: grey;
+        }
+        button:focus{
+            background-color: yellow;
+            box-shadow: 3px 5px 5px grey;
+        }
+        input{
+            border-width: 0px 0px 2px 0px;
+            margin: 3%;
+             box-shadow: 3px 5px 5px grey;
+        }
+        input:required{
+            border-color: red;
+            color:green;
+        }
+        input:disabled{
+            border-width: 0px;
+            background: grey;
+            color: white;
+        }
+        input:enabled{
+            font-family: Montana;
+        }
+        input:optional{
+            border-color: rgb(0, 45, 245);
+        }
+        input:in-range{
+            font-width: 900;
+        }
+        input:out-of-range{
+            color: red;
+
+        }
+        input:valid{
+
+            color:blue;
+        }
+        input:invalid{
+            color: red;
+
+        }
+        input:placeholder-shown{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form></form>
+    <input type="text" placeholder="First Name" required enabled/><br>
+
+    <input type="text" placeholder="Middle Name" /><br>
+
+    <input type="text" placeholder="Last Name" required enabled/><br>
+     <input type="date"  required/><br>
+     <input type="text" value="Mathura" disabled/><br>
+     <input type="number" min="10" max="100"/><br>
+     <input type="email" placeholder="Email" /><br>
+</form>
+   
+   <button>Click ME !!</button>
+   <a href="#3">Link</a>
+</body>
+</html>

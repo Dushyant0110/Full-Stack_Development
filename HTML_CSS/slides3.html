@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Miles Morales</title>
+
+<style>
+*{
+    margin:0;
+    box-sizing:border-box
+}
+
+body{
+    background:#000
+}
+
+.slide{
+    width:90%;
+    height:90vh;
+    margin:5vh auto;
+    background-size:cover;
+    background-position:center;
+    position:sticky;
+    top:20px
+}
+
+.slide1{
+    background-image:url("./1.jpg");
+    z-index:1
+}
+
+.slide2{
+    background-image:url("./2.jpg");
+    top:80px;
+    z-index:2
+}
+
+.space{
+    height:70vh
+}
+
+.cards{
+    width:90%;
+    margin:80px auto;
+    display:flex;
+    gap:15px;
+    position:relative;
+    z-index:5
+}
+.card{
+    height:500px;
+    flex:1;
+    background-size:cover;
+    background-position:center
+}
+.card3{
+    background-image:url("./3.jpg")
+}
+
+.card4{
+    background-image:url("./4.jpg")
+}
+
+.card5{
+    background-image:url("./5.jpg")
+}
+
+.card6{
+    background-image:url("./6.jpg")
+}
+
+.slide7{
+    background-image:url("./images.jpg");
+    z-index:10;
+    top:20px
+}
+</style>
+</head>
+<body>
+<div class="slide slide1"></div>
+<div class="space"></div>
+<div class="slide slide2"></div>
+<div class="space"></div>
+<div class="cards">
+    <div class="card card3"></div>
+    <div class="card card4"></div>
+    <div class="card card5"></div>
+    <div class="card card6"></div>
+</div>
+<div class="slide slide7"></div>
+</body>
+</html>
+

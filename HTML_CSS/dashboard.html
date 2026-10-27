@@ -1,0 +1,105 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial;
+        }
+
+        .dashboard {
+            width: 90%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 150px 100px 100px;
+            gap: 10px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .box1 {
+            background-color: blueviolet;
+            grid-column: 1 / 5;
+        }
+
+        .box2 {
+            background-color: green;
+            grid-row: 2 / 4;
+        }
+
+        .box3 {
+            background-color: yellow;
+            grid-column: 2 / 5;
+        }
+
+        .box4 {
+            background-color: pink;
+        }
+
+        .box5 {
+            background-color: pink;
+        }
+
+        .box6 {
+            background-color: purple;
+            color: white;
+            grid-row: 4 / 5;
+        }
+
+        .box7 {
+            background-color: orange;
+            grid-column: 2 / 4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="heading">
+            <h1>TASK 3 - MAGAZINE LAYOUT</h1>
+            <button>Click Me</button>
+        </div>
+
+        <div class="container">
+
+            <div class="box box1">HEADER</div>
+            <div class="box box2">SIDEBAR</div>
+            <div class="box box3">CONTENT</div>
+            <div class="box box4">CARD 1</div>
+            <div class="box box5">CARD 2</div>
+            <div class="box box6">FOOTER</div>
+            <div class="box box7">FEATURED</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

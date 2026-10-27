@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles Morales</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+
+        .slide {
+            width: 90%;
+            height: 90vh;
+            margin: 5vh auto;
+            border-radius: 20px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .slide::before,
+        .flex-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, .9),
+                transparent
+            );
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            color: #e50914;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .slide1 {
+            background-image: url("./1.jpg");
+        }
+
+        .slide2 {
+            background-image: url("./2.jpg");
+        }
+
+        .space {
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .space p {
+            color: #777;
+        }
+
+        .flex-section {
+            width: 90%;
+            height: 80vh;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .flex-card {
+            position: absolute;
+            width: 75%;
+            height: 70vh;
+            border-radius: 18px;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .card3 {
+            background-image: url("./3.jpg");
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .card4 {
+            background-image: url("./4.jpg");
+            top: 30px;
+            left: 8%;
+            z-index: 2;
+        }
+
+        .card5 {
+            background-image: url("./5.jpg");
+            top: 60px;
+            left: 16%;
+            z-index: 3;
+        }
+
+        .card6 {
+            background-image: url("./6.jpg");
+            top: 90px;
+            left: 24%;
+            z-index: 4;
+        }
+
+        .card-content {
+            position: absolute;
+            bottom: 0;
+            padding: 40px;
+            z-index: 2;
+        }
+
+        .card-content h2 {
+            color: #e50914;
+        }
+
+        .slide7 {
+            background-image: url("./7.jpg");
+        }
+
+        footer {
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer h2 {
+            color: #e50914;
+        }
+
+        @media (max-width: 800px) {
+            .slide {
+                width: 94%;
+                height: 75vh;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .flex-section {
+                width: 94%;
+                height: 65vh;
+            }
+
+            .flex-card {
+                width: 85%;
+                height: 60vh;
+            }
+
+            .card4 {
+                left: 5%;
+            }
+
+            .card5 {
+                left: 10%;
+            }
+
+            .card6 {
+                left: 15%;
+            }
+
+            .card-content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="slide slide1">
+        <div class="content">
+            <h1>Miles</h1>
+            <p>
+                A hero who learns that courage
+                begins with believing in yourself.
+            </p>
+        </div>
+    </section>
+
+    <div class="space">
+        <p>KEEP SCROLLING ↓</p>
+    </div>
+
+    <section class="slide slide2">
+        <div class="content">
+            <h2>Morales</h2>
+            <p>
+                Miles carries the responsibility
+                of becoming a hero in his own way.
+            </p>
+        </div>
+    </section>
+
+    <div class="space">
+        <p>HIS JOURNEY CONTINUES ↓</p>
+    </div>
+
+    <section class="flex-section">
+
+        <div class="flex-card card3">
+            <div class="card-content">
+                <h2>Courage</h2>
+                <p>Being afraid doesn't mean you cannot be brave.</p>
+            </div>
+        </div>
+
+        <div class="flex-card card4">
+            <div class="card-content">
+                <h2>Choice</h2>
+                <p>Every hero must decide who they want to become.</p>
+            </div>
+        </div>
+
+        <div class="flex-card card5">
+            <div class="card-content">
+                <h2>Power</h2>
+                <p>Power matters most when it is used to help others.</p>
+            </div>
+        </div>
+
+        <div class="flex-card card6">
+            <div class="card-content">
+                <h2>Identity</h2>
+                <p>Miles proves that you don't have to follow someone else's path.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="slide slide7">
+        <div class="content">
+            <h1>Anyone</h1>
+            <p>
+                Anyone can wear the mask.
+                What matters is what you do with it.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>Be Your Own Hero.</h2>
+            <p>Miles Morales</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+

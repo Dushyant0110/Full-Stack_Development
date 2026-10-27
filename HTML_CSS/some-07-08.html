@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Cards</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f5f5f5;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            padding:40px 0;
+        }
+
+        .card{
+            position:sticky;
+            top:20px;
+            padding:25px;
+            border-radius:15px;
+            color:white;
+            margin-bottom:80px;
+            box-shadow:0 10px 20px rgba(0,0,0,0.25);
+        }
+
+        .card:nth-child(1){
+            background:#ff6b6b;
+        }
+
+        .card:nth-child(2){
+            background:#4dabf7;
+        }
+
+        .card:nth-child(3){
+            background:#51cf66;
+        }
+
+        .card:nth-child(4){
+            background:#845ef7;
+        }
+
+        h2{
+            margin-bottom:15px;
+        }
+
+        p{
+            line-height:1.7;
+        }
+
+        .content{
+            padding:50px 0;
+        }
+
+        .content p{
+            margin-bottom:20px;
+            color:#333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Card 1</h2>
+        <p>
+            This is the first sticky card. Scroll down and watch it stick
+            to the top. The next cards will eventually cover it as they
+            reach the same sticky position.
+        </p>
+    </div>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, maxime.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sequi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, tempore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, provident.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 2</h2>
+        <p>
+            This is the second card. As you continue scrolling, it will
+            stick to the top and replace the first card.
+        </p>
+    </div>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 3</h2>
+        <p>
+            Sticky positioning is commonly used for cards, menus,
+            section titles, and sidebars.
+        </p>
+    </div>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+        <h2>Card 4</h2>
+        <p>
+            This is the last sticky card. Scroll to see how each card
+            sticks to the top one after another.
+        </p>
+    </div>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

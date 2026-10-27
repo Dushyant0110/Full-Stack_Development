@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:blue;
+            --text-color:white;
+            --font-style: arial;
+            --button-height: 100px;
+        }
+        button{
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            font-style: var(--font-style);
+            button-height : var( --button-height);
+        }
+        div{
+            width:100px;
+            height:100px;
+            background-color: black;
+        }
+        @media(min-width:500px){
+            div{
+            background-color: blue;
+        }
+    }
+    </style>
+</head>
+<body>
+    <button>Click Me</button>
+    <div></div>
+</body>
+</html>

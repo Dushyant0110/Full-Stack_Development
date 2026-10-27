@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .container{
+
+            background-color: bisque;
+            outline: 2px solid blue;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .container>div{
+            background-color: red;
+            color: rgb(14, 1, 255);
+            flex-basis: 100px;
+            height: 100px;
+            align-content: center;
+            text-align: center;
+            box-shadow: 15px 10px 15px grey;
+        }
+        #box1{
+            /*flex-grow: 2;*/
+            /*flex-shrink: 2;*/
+            background-color: blanchedalmond;
+            flex: 2 0 150px;
+            flex-wrap: wrap;
+
+        }
+        #box2{
+            background-color: aquamarine;
+            /*flex-shrink: 1;*/
+            /*flex-grow: 1;*/
+            flex: 1 0 150px;
+        }
+        #box3{
+            background-color: blueviolet;
+            /*flex-grow: 1;*/
+            /*flex-shrink: 1;*/
+            flex: 1 1 150px;
+        }
+        #box4{
+            background-color: violet;
+            /*flex-grow: 1;*/
+            /*flex-shrink: 1;*/
+            flex: 2 0 150px;
+        }
+        #box5{
+            background-color:pink;
+            /*flex-grow: 1;*/
+            /*flex-shrink: 1;*/
+            flex: 1 5 150px;
+        }
+        #box6{
+            background-color: rosybrown;
+            /*flex-grow: 1;*/
+            /*flex-shrink: 1;*/
+            flex: 1 0 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="box1"> Bring</div>
+    <div id="box2">Me</div>
+    <div id="box3">Thanossssss</div>
+    <div id="box4"> Avengers</div>
+    <div id="box5">Assemble</div>
+    <div id="box6">UAAAAAAAAAA</div>
+    </div>
+    
+</body>
+</html>

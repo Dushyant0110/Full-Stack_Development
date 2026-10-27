@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modi</title>
+    <style>
+        *{
+            /*     Universal Selector    */
+            /*padding:0px;*/
+            margin:0px;
+            color: firebrick;
+        }
+        h2{
+            /*      Element Selector     */
+            color:blue;
+        }
+        input[type=email]{
+            border-radius: 150px ;
+        }
+        #myid{
+            color: red;
+        }
+        .myclass{
+            font-size:30px;
+        }
+        ul[data=data]{
+            background-color: yellow;
+        }
+        li[data=mydata]{
+            background-color: green;
+        }
+        section{
+            background-color: aqua;
+        }
+        section h2{
+            color: blue;
+        }
+        /*
+        section>h2{
+            color:red;
+        }*/
+        h2+p{
+            color:green;
+        }
+        h2~p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+   <h2>Selectors</h2>
+   <ul data="data">
+    <li data="mydata">Universal</li>
+    <li id="myid">Element</li>
+    <li class="myclass">Attribute</li>
+    <li>ID</li>
+    <li class="myclass">Class</li>
+    <li>Combinators</li>
+    <li>Pseudo Class</li>
+    <li>Pseudo Elements</li>
+   </ul>
+   <input type="email" placeholder="Email"/><br>
+   <input type="password" placeholder="Password"/>
+   <button type="submit">Submit</button>
+   <section>
+    <h2>Selector</h2>
+    <p>PARA</p>
+   </section>
+</body>
+</html>
