@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Modern Calculator</title>
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    font-family:Arial,sans-serif;
+}
+.calculator{
+    width:320px;
+    padding:22px;
+    background:#17182b;
+    border-radius:20px;
+    box-shadow:0 15px 40px #2226;
+}
+h2{text-align:center;color:white}
+#display{
+    width:100%;
+    height:65px;
+    margin-bottom:18px;
+    border:0;
+    border-radius:12px;
+    background:#292b45;
+    color:white;
+    text-align:right;
+    font-size:27px;
+    padding:12px;
+}
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+button{
+    height:55px;
+    border:0;
+    border-radius:12px;
+    background:#292b45;
+    color:white;
+    font-size:19px;
+    cursor:pointer;
+    transition:.2s;
+}
+button:hover{background:#464b70;transform:scale(1.04)}
+.operator{background:#6548b5}
+.clear{background:#e05270}
+.equal{background:#16a085}
+</style>
+</head>
+<body>
+
+<div class="calculator">
+    <h2>My Calculator</h2>
+    <input type="text" id="display" readonly>
+
+    <div class="buttons">
+        <button class="clear" data-value="AC">AC</button>
+        <button class="clear" data-value="DEL">DEL</button>
+        <button class="operator" data-value="/">÷</button>
+        <button class="operator" data-value="*">×</button>
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button class="operator" data-value="-">−</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button class="operator" data-value="+">+</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button class="equal" data-value="=" rowspan="2">=</button>
+
+        <button data-value="0">0</button>
+        <button data-value="00">00</button>
+        <button data-value=".">.</button>
+    </div>
+</div>
+
+<script type="module" src="./s18.js"></script>
+</body>
+</html>
